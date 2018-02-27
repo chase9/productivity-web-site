@@ -1,0 +1,54 @@
+.navbar {
+    margin: 0;
+    padding: 0;
+    background-color: darkgray;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+
+.navbar li :hover {
+    background-color: #666666;
+}
+
+.active {
+    background-color: green;
+}
+
+.jumbotron {
+    background-color: green;
+    padding: 10px 20px;
+    margin: 20px 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+body {
+    font-family: "system", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+/* System Font Stack via https://css-tricks.com/snippets/css/system-font-stack/ */
+@font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
