@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" lang="en-us">
+    <title>
+        Photos
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Navbar -->
+<ul class="navbar">
+    <li class="navbar-brand">
+        <a href="index.html">Chase Lau</a>
+    </li>
+    <li class="active">
+        <a href="photos.html">Photos</a>
+    </li>
+    <li>
+        <a href="list.html">To-Do</a>
+    </li>
+</ul>
+
+<!-- Content -->
+<h1 style="text-align: center; font-size-adjust: 1">My Photos</h1>
+
+<div class="photo-grid" id="photo-grid">
+    <div class="column">
+        <img src="images/image%20-%201.jpg" class="flex-img">
+        <img src="images/image%20-%202.jpg" class="flex-img">
+        <img src="images/image%20-%203.jpg" class="flex-img">
+        <img src="images/image%20-%204.jpg" class="flex-img">
+        <img src="images/image%20-%2017.jpg" class="flex-img">
+    </div>
+    <div class="column">
+        <img src="images/image%20-%205.jpg" class="flex-img">
+        <img src="images/image%20-%206.jpg" class="flex-img">
+        <img src="images/image%20-%207.jpg" class="flex-img">
+        <img src="images/image%20-%208.jpg" class="flex-img">
+        <img src="images/image%20-%2018.jpg" class="flex-img">
+    </div>
+    <div class="column">
+        <img src="images/image%20-%209.jpg" class="flex-img">
+        <img src="images/image%20-%2010.jpg" class="flex-img">
+        <img src="images/image%20-%2011.jpg" class="flex-img">
+        <img src="images/image%20-%2012.jpg" class="flex-img">
+        <img src="images/image%20-%2019.jpg" class="flex-img">
+    </div>
+    <div class="column">
+        <img src="images/image%20-%2013.jpg" class="flex-img">
+        <img src="images/image%20-%2014.jpg" class="flex-img">
+        <img src="images/image%20-%2015.jpg" class="flex-img">
+        <img src="images/image%20-%2016.jpg" class="flex-img">
+        <img src="images/image%20-%2020.jpg" class="flex-img">
+    </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+    <span class="close" id="close">&times;</span>
+    <span class="play" id="play" onclick="toggleSlideshow()">Play</span>
+    <img class="lightbox-image" id="lightbox-image">
+    <div class="lightbox-thumb-box" id="lightbox-thumbs">
+
+    </div>
+    <span class="arrows" id="left-arrow" onclick="previous()">&#10094;</span>
+    <span class="arrows" id="right-arrow" style="right: 0;" onclick="next()">&#10095;</span>
+</div>
+
+
+<script src="scripts.js"></script>
+</body>
+</html>
