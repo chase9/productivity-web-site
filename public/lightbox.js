@@ -18,8 +18,8 @@ for (var i = 0; i < images.length; i++) {
     lightboxThumbBox.innerHTML += "<img class='lightbox-thumb' src='" + images[i].src + "'>";
 
     var lightBoxThumbs = document.getElementsByClassName('lightbox-thumb');
-    for (var i = 0; i < lightBoxThumbs.length; i++) {
-        lightBoxThumbs[i].onclick = function () {
+    for (var j = 0; j < lightBoxThumbs.length; j++) {
+        lightBoxThumbs[j].onclick = function () {
             lightbox.style.visibility = "visible";
             lightbox.style.opacity = '1';
             lightboxImg.src = this.src;
@@ -54,20 +54,32 @@ function getCurrentIndex() {
 
 function previous() {
     var currIndex = getCurrentIndex();
-    if (currIndex === 0) {
-        lightboxImg.src = images[images.length - 1].src;
-    } else {
-        lightboxImg.src = images[getCurrentIndex() - 1].src;
-    }
+    lightboxImg.style.opacity = '0';
+    setTimeout(function () {
+        if (currIndex === 0) {
+            lightboxImg.src = images[images.length - 1].src;
+        } else {
+            lightboxImg.src = images[getCurrentIndex() - 1].src;
+        }
+    }, 200);
+    setTimeout(function () {
+        lightboxImg.style.opacity = '1';
+    }, 200);
 }
 
 function next() {
     var currIndex = getCurrentIndex();
-    if (currIndex === images.length - 1) {
-        lightboxImg.src = images[0].src;
-    } else {
-        lightboxImg.src = images[currIndex + 1].src;
-    }
+    lightboxImg.style.opacity = '0';
+    setTimeout(function () {
+        if (currIndex === images.length - 1) {
+            lightboxImg.src = images[0].src;
+        } else {
+            lightboxImg.src = images[currIndex + 1].src;
+        }
+    }, 200);
+    setTimeout(function () {
+        lightboxImg.style.opacity = '1';
+    }, 200);
 }
 
 var interval;
