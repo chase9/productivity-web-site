@@ -109,7 +109,7 @@ body {
 .close {
     position: absolute;
     color: white;
-    font-size-adjust: 1.5;
+    font-size: 36px;
     right: 40px;
     top: 40px;
     transition: all .2s;
@@ -128,11 +128,11 @@ body {
 
 .play {
     position: absolute;
-    margin: auto;
     color: white;
-    font-size-adjust: 1.5;
+    font-size: 36px;
     transition: all .2s;
-    z-index: 2;
+    right: 35px;
+    top: 95px;
 }
 
 .close:hover, .arrows:hover, .play:hover {

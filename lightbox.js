@@ -85,14 +85,14 @@ function next() {
 var interval;
 
 function toggleSlideshow() {
-    if (playButton.innerText === "Play") {
-        playButton.innerText = 'Pause';
+    console.log(playButton.innerText);
+    if (playButton.innerHTML === "▶") {
+        playButton.innerHTML = '&#10074;&#10074;';
         slideshow = true;
     } else {
-        playButton.innerText = 'Play';
+        playButton.innerHTML = '▶';
         slideshow = false
     }
-    console.log(slideshow);
     if (slideshow) {
         playSlideshow()
     } else {
