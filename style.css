@@ -230,7 +230,7 @@ body {
 
 .task-list > span {
     position: initial;
-    font-size: 10px;
+    font-size: 24px;
     padding-right: 20px;
     text-align: end;
 }
@@ -238,7 +238,7 @@ body {
 .task > .close {
     position: unset;
     color: white;
-    font-size: 10px;
+    font-size: 24px;
 }
 
 /* System Font Stack via https://css-tricks.com/snippets/css/system-font-stack/ */

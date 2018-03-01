@@ -129,7 +129,7 @@ function saveTasks() {
 function loadTasks() {
     var loadedData = localStorage.getItem("container");
 
-    if (loadedData.trim() === "") {
+    if (loadedData === null || loadedData.trim() === "") {
         container.innerHTML += "<div class='task-list' style='background-color: green'><span onclick='deleteList(event.target)' class='close'>&times;</span><h2 class='task-list-header'>Reminders</h2>" +
             "<div class='task' onclick='toggleTask(event.target)'>" +
             "<h3>Complete this project!</h3>" +
