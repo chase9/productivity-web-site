@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" lang="en-us">
+    <title>
+        To-Do List
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Navbar -->
+<ul class="navbar">
+    <li class="navbar-brand">
+        <a href="index.html">Chase Lau</a>
+    </li>
+    <li>
+        <a href="photos.html">Photos</a>
+    </li>
+    <li class="active">
+        <a href="list.html">To-Do</a>
+    </li>
+    <li>
+        <a class="task-list-control" id="new-task">New Task</a>
+    </li>
+    <li>
+        <a class="task-list-control" id="new-list">New List</a>
+    </li>
+</ul>
+
+<!-- Content -->
+<h1 style="text-align: center;">Task List</h1>
+
+<div class="container" id="container"></div>
+
+<!-- Prompt -->
+<div class="prompt" id="prompt">
+    <span class="close" id="close">&times;</span>
+    <div class="prompt-box" id="prompt-box">
+        <form id="title-form">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title">
+        </form>
+        <form id="date-form">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date">
+        </form>
+        <form id="color-form">
+            <label for="color">List Color</label>
+            <input type="color" id="color" name="color">
+        </form>
+        <select id="list-select">
+            <!-- Populated by JS -->
+        </select>
+        <input type="button" id="submit-button" value="Create" onclick="submit()">
+    </div>
+</div>
+
+<script src="list.js"></script>
+</body>
+</html>
